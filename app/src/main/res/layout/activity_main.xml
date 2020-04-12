@@ -10,22 +10,25 @@
     <TableLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content">
-<TableRow>
-    <TextView
-        android:text="Scorecard"
-        android:id="@+id/textViewScorecard"
-        android:textSize="35sp">
 
-    </TextView>
-</TableRow>
+        <TableRow>
+
+            <TextView
+                android:id="@+id/textViewScorecard"
+                android:text="SCORECARD"
+                android:textSize="35sp">
+
+            </TextView>
+        </TableRow>
+
         <TableRow>
 
             <TextView
                 android:id="@+id/textView"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_column="0"
-                android:text="TextView" />
+                android:text="P1: "
+                android:textSize="25dp" />
 
 
         </TableRow>
@@ -35,8 +38,10 @@
             <TextView
                 android:id="@+id/textView1"
                 android:layout_width="wrap_content"
+
                 android:layout_height="wrap_content"
-                android:text="P1 : " />
+                android:text="P2 : "
+                android:textSize="25dp" />
 
             <Button
                 android:id="@+id/button"
@@ -53,8 +58,10 @@
             <TextView
                 android:id="@+id/textVie2w"
                 android:layout_width="wrap_content"
+
                 android:layout_height="wrap_content"
-                android:text="TextView" />
+                android:text="DRAW:"
+                android:textSize="25dp" />
 
 
         </TableRow>
