@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+    <TableLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+<TableRow>
+    <TextView
+        android:text="Scorecard"
+        android:id="@+id/textViewScorecard"
+        android:textSize="35sp">
+
+    </TextView>
+</TableRow>
+        <TableRow>
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="0"
+                android:text="TextView" />
+
+
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="P1 : " />
+
+            <Button
+                android:id="@+id/button"
+                android:layout_width="79dp"
+                android:layout_height="79dp"
+                android:layout_marginStart="50dp"
+
+                android:text="Button" />
+
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:id="@+id/textVie2w"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TextView" />
+
+
+        </TableRow>
+    </TableLayout>
+
+    <TableLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp">
+
+        <TableRow>
+
+            <Button
+                android:id="@+id/button_00"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+
+                android:text="00" />
+
+            <Button
+                android:id="@+id/button_01"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+
+
+                android:text="01" />
+
+            <Button
+                android:id="@+id/button_02"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_weight="1"
+
+                android:text="02" />
+        </TableRow>
+
+        <TableRow>
+
+            <Button
+                android:id="@+id/button_10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text="10" />
+
+            <Button
+                android:id="@+id/button_11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text="11" />
+
+            <Button
+                android:id="@+id/button_12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text="12" />
+        </TableRow>
+
+        <TableRow>
+
+            <Button
+                android:id="@+id/button_20"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text="20" />
+
+            <Button
+                android:id="@+id/button_21"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text="21" />
+
+            <Button
+                android:id="@+id/button_22"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text="22" />
+        </TableRow>
+    </TableLayout>
+</LinearLayout>
+
+
