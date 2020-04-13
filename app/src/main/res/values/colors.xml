@@ -3,7 +3,10 @@
     <color name="colorPrimary">#DDBDB7</color>
     <color name="colorPrimaryDark">#AB8D87</color>
     <color name="colorAccent">#F7D6D0</color>
+    <color name="colorTextHeading">#DC4D33</color>
     <color name="colorText">#992E1A</color>
     <color name="colorBox">#D3E2E4</color>
-    #DC4D33#E36F5A#EFD6E8#84A8AE#D8E1C9#E2DAF1
+    <color name="colorLinearBox">#EFD6E8</color>
+
+    #E36F5A#EFD6E8#84A8AE#D8E1C9#E2DAF1
 </resources>
