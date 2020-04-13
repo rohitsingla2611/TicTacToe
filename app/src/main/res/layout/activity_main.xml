@@ -26,7 +26,7 @@
                     android:id="@+id/textViewScorecard"
                     android:text="SCORECARD"
                     android:textColor="@color/colorTextHeading"
-                    android:textSize="40sp"
+                    android:textSize="38sp"
                     android:textStyle="bold">
 
                 </TextView>
@@ -38,9 +38,10 @@
                     android:id="@+id/textView"
                     android:layout_width="213dp"
                     android:layout_height="wrap_content"
+                    android:padding="5dp"
                     android:text="P1  : "
                     android:textColor="@color/colorText"
-                    android:textSize="35sp"
+                    android:textSize="33sp"
                     android:textStyle="bold" />
 
 
@@ -51,10 +52,12 @@
                 <TextView
                     android:id="@+id/textView1"
                     android:layout_width="wrap_content"
+
                     android:layout_height="wrap_content"
+                    android:padding="5dp"
                     android:text="P2  : "
                     android:textColor="@color/colorText"
-                    android:textSize="35sp"
+                    android:textSize="33sp"
                     android:textStyle="bold" />
 
 
@@ -65,10 +68,12 @@
                 <TextView
                     android:id="@+id/textVie2w"
                     android:layout_width="wrap_content"
+
                     android:layout_height="wrap_content"
+                    android:padding="5dp"
                     android:text="TIE :"
                     android:textColor="@color/colorText"
-                    android:textSize="35sp"
+                    android:textSize="33sp"
                     android:textStyle="bold" />
 
 
@@ -88,19 +93,23 @@
 
     <TableLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="match_parent"
         android:layout_gravity="center_vertical"
-        android:layout_marginTop="25dp"
+        android:layout_marginTop="15dp"
         android:background="@color/colorPrimary"
-        android:padding="10dp"
         android:stretchColumns="*">
 
-        <TableRow android:padding="5dp">
+        <TableRow
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="1.5dp"
+            android:padding="4dp">
 
             <Button
                 android:id="@+id/button_00"
                 android:layout_width="100dp"
                 android:layout_height="100dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
                 android:layout_weight="1"
                 android:background="@color/colorBox"
                 android:text="00"
@@ -114,6 +123,7 @@
                 android:layout_width="100dp"
                 android:layout_height="100dp"
                 android:layout_weight="1"
+
                 android:background="@color/colorBox"
                 android:text="01"
                 android:textColor="@color/colorText"
@@ -125,6 +135,8 @@
                 android:id="@+id/button_02"
                 android:layout_width="100dp"
                 android:layout_height="100dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
                 android:layout_weight="1"
                 android:background="@color/colorBox"
                 android:text="02"
@@ -140,6 +152,8 @@
                 android:id="@+id/button_10"
                 android:layout_width="100dp"
                 android:layout_height="100dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
                 android:layout_weight="1"
                 android:background="@color/colorBox"
                 android:text="10"
@@ -163,6 +177,8 @@
                 android:id="@+id/button_12"
                 android:layout_width="100dp"
                 android:layout_height="100dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
                 android:layout_weight="1"
                 android:background="@color/colorBox"
                 android:text="12"
@@ -171,12 +187,18 @@
                 android:textStyle="bold" />
         </TableRow>
 
-        <TableRow android:padding="5dp">
+        <TableRow
+            android:layout_marginTop="1.5dp"
+            android:layout_marginBottom="2.5dp"
+
+            android:padding="4dp">
 
             <Button
                 android:id="@+id/button_20"
                 android:layout_width="100dp"
                 android:layout_height="100dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
                 android:layout_weight="1"
                 android:background="@color/colorBox"
                 android:text="20"
@@ -200,7 +222,10 @@
                 android:id="@+id/button_22"
                 android:layout_width="100dp"
                 android:layout_height="100dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
                 android:layout_weight="1"
+
                 android:background="@color/colorBox"
                 android:text="22"
                 android:textColor="@color/colorText"
