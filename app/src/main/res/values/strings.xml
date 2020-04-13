@@ -1,3 +1,14 @@
 <resources>
     <string name="app_name">TicTacToe</string>
+    <string name="scorecard">SCORECARD</string>
+    <string name="p1">P1 &#x2009;:</string>
+    <string name="p2">P2 &#x2009;:</string>
+    <string name="tie">TIE &#x20; :</string>
+    <string name="resetButtonImage">resetButtonImage</string>
 </resources>
+
+    <!--
+        &#x200A;    HAIR SPACE
+        &#x2009;    THIN SPACE
+        &#x20;      SPACE
+        -->

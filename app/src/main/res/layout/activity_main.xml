@@ -24,7 +24,7 @@
 
                 <TextView
                     android:id="@+id/textViewScorecard"
-                    android:text="SCORECARD"
+                    android:text="@string/scorecard"
                     android:textColor="@color/colorTextHeading"
                     android:textSize="38sp"
                     android:textStyle="bold">
@@ -35,11 +35,11 @@
             <TableRow>
 
                 <TextView
-                    android:id="@+id/textView"
-                    android:layout_width="213dp"
+                    android:id="@+id/textViewPlayer1"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:padding="5dp"
-                    android:text="P1  : "
+                    android:text="@string/p1"
                     android:textColor="@color/colorText"
                     android:textSize="33sp"
                     android:textStyle="bold" />
@@ -50,12 +50,11 @@
             <TableRow>
 
                 <TextView
-                    android:id="@+id/textView1"
+                    android:id="@+id/textViewPlayer2"
                     android:layout_width="wrap_content"
-
                     android:layout_height="wrap_content"
                     android:padding="5dp"
-                    android:text="P2  : "
+                    android:text="@string/p2"
                     android:textColor="@color/colorText"
                     android:textSize="33sp"
                     android:textStyle="bold" />
@@ -66,12 +65,11 @@
             <TableRow>
 
                 <TextView
-                    android:id="@+id/textVie2w"
+                    android:id="@+id/textViewDraw"
                     android:layout_width="wrap_content"
-
                     android:layout_height="wrap_content"
                     android:padding="5dp"
-                    android:text="TIE :"
+                    android:text="@string/tie"
                     android:textColor="@color/colorText"
                     android:textSize="33sp"
                     android:textStyle="bold" />
@@ -82,11 +80,12 @@
 
 
         <ImageView
-            android:id="@+id/button"
+            android:id="@+id/imageViewReset"
             android:layout_width="79dp"
             android:layout_height="79dp"
             android:layout_marginStart="5dp"
             android:layout_marginTop="65dp"
+            android:contentDescription="@string/resetButtonImage"
             android:src="@drawable/reset_icon" />
 
     </LinearLayout>
