@@ -14,9 +14,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     long backKeyPressedTime;
     TextView textViewPlayer1, textViewPlayer2, textViewDraw;
     ImageView imageViewReset;
-    Button button_00, button_01, button_02;
-    Button button_10, button_11, button_12;
-    Button button_20, button_21, button_22;
+    Button[][] button_ = new Button[3][3];
+
 
 
     @Override
@@ -33,31 +32,18 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         imageViewReset = findViewById(R.id.imageViewReset);
 
-        button_00 = findViewById(R.id.button_00);
-        button_01 = findViewById(R.id.button_01);
-        button_02 = findViewById(R.id.button_02);
+        for (int i = 0; i < 3; i++) {
+            for (int j = 0; j < 3; j++) {
+                String buttonID = "button_" + i + j;
+                int resultID = getResources().getIdentifier(buttonID, "id", getPackageName());
+                button_[i][j] = findViewById(resultID);
+                button_[i][j].setOnClickListener(this);
+            }
+        }
 
-        button_10 = findViewById(R.id.button_10);
-        button_11 = findViewById(R.id.button_11);
-        button_12 = findViewById(R.id.button_12);
-
-        button_20 = findViewById(R.id.button_20);
-        button_21 = findViewById(R.id.button_21);
-        button_22 = findViewById(R.id.button_22);
 
         imageViewReset.setOnClickListener(this);
 
-        button_00.setOnClickListener(this);
-        button_01.setOnClickListener(this);
-        button_02.setOnClickListener(this);
-
-        button_10.setOnClickListener(this);
-        button_11.setOnClickListener(this);
-        button_12.setOnClickListener(this);
-
-        button_20.setOnClickListener(this);
-        button_21.setOnClickListener(this);
-        button_22.setOnClickListener(this);
     }
 
     @Override
@@ -75,26 +61,43 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     public void onClick(View view) {
         switch (view.getId()) {
             case R.id.imageViewReset:
+                Toast.makeText(this, " hello image buddy", Toast.LENGTH_SHORT).show();
 
                 return;
             case R.id.button_00:
+                Toast.makeText(this, " 00 ", Toast.LENGTH_SHORT).show();
                 return;
             case R.id.button_01:
+                //     Toast.makeText(this, " 01", Toast.LENGTH_SHORT).show();
+
                 return;
             case R.id.button_02:
+                Toast.makeText(this, " 02", Toast.LENGTH_SHORT).show();
+
                 return;
             case R.id.button_10:
+                Toast.makeText(this, "10", Toast.LENGTH_SHORT).show();
+
                 return;
             case R.id.button_11:
+                //     Toast.makeText(this, "11", Toast.LENGTH_SHORT).show();
+
                 return;
             case R.id.button_12:
+
+                //      Toast.makeText(this, "12", Toast.LENGTH_SHORT).show();
+
                 return;
             case R.id.button_20:
+                //    Toast.makeText(this, "20", Toast.LENGTH_SHORT).show();
+
                 return;
             case R.id.button_21:
+                //     Toast.makeText(this, " 21", Toast.LENGTH_SHORT).show();
+
                 return;
             case R.id.button_22:
-                return;
+                Toast.makeText(this, " 22", Toast.LENGTH_SHORT).show();
 
 
         }
