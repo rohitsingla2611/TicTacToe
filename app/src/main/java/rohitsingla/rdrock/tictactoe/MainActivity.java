@@ -112,16 +112,14 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 traverseBox[0][2].equals(traverseBox[2][0]);
     }
 
-    //
     void player1Wins() {
         player1WinPoints++;
         Toast.makeText(this, "Player 1 Wins!", Toast.LENGTH_SHORT).show();
         updatePoints();
         resetBoxes();
-//
+
     }
 
-    //
     void player2Wins() {
         player2WinPoints++;
         Toast.makeText(this, "Player 2 Wins!", Toast.LENGTH_SHORT).show();
@@ -133,7 +131,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         drawPoints++;
         Toast.makeText(this, "Match Draw!", Toast.LENGTH_SHORT).show();
         updatePoints();
-        //      resetBoxes();
+        resetBoxes();
 
         //   }
 
