@@ -160,14 +160,14 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     }
 
-    // @Override
+    @Override
     public void onBackPressed() {
-        //      if (backKeyPressedTime + 2000 > System.currentTimeMillis()) {
+        if (backKeyPressedTime + 2000 > System.currentTimeMillis()) {
             super.onBackPressed();
             return;
         } else {
-            //Toast.makeText(this, "Press again to Exit", Toast.LENGTH_SHORT).show();
-            //     }
-            //     backKeyPressedTime = System.currentTimeMillis();
+            Toast.makeText(this, "Press again to Exit", Toast.LENGTH_SHORT).show();
+        }
+        backKeyPressedTime = System.currentTimeMillis();
     }
 }
