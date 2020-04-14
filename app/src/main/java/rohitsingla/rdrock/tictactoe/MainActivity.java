@@ -133,17 +133,17 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         updatePoints();
         resetBoxes();
 
-        //   }
+    }
 
-//    void newGame() {
+    void newGame() {
         resetBoxes();
-//
+
     }
 
     @SuppressLint("SetTextI18n")
     void updatePoints() {
         textViewPlayer1.setText("P  1: " + player1WinPoints);
-        //   textViewPlayer2.setText("P  2: " + player2WinPoints);
+        textViewPlayer2.setText("P  2: " + player2WinPoints);
         textViewDraw.setText("P  2: " + drawPoints);
 
 
@@ -155,7 +155,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 button_[i][j].setText("");
             }
         }
-    //     boxesCount = 0;
+
+    boxesCount =0
     playerNo1Turn =true
 
 }
