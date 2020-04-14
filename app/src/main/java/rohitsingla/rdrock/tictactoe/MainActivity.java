@@ -82,6 +82,14 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     }
 
+    {
+        if (traverseBox[i][0].equals(traverseBox[i][1]) &&
+                traverseBox[i][0].equals(traverseBox[i][2]) &&
+                !traverseBox[i][0].equals("")) {
+            return true;
+        }
+    }
+        for(i =0i< 3i++)
     boolean whichPlayerWins() {
         for (i = 0; i < 3; i++) {
             for (j = 0; j < 3; j++) {
@@ -91,20 +99,13 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         for (i = 0; i < 3; i++) { //
             if (traverseBox[0][i].equals(traverseBox[1][i]) &&
-                    traverseBox[0][i].equals(traverseBox[2][i]) &&
-                    !traverseBox[0][i].equals("")) {
-                return true;
+                    traverseBox[0][i].equals(traverseBox[2][i]) &&//
+            ///                  !traverseBox[0][i].equals("")) {
+            return true;///
             }
-        }
-        for (i = 0; i < 3; i++) {
-            if (traverseBox[i][0].equals(traverseBox[i][1]) &&
-                    traverseBox[i][0].equals(traverseBox[i][2]) &&
-                    !traverseBox[i][0].equals("")) {
-                return true;
-            }
-        }
+    }//
 
-        if (traverseBox[0][0].equals(traverseBox[1][1]) &&
+    //    if (traverseBox[0][0].equals(traverseBox[1][1]) &&
                 traverseBox[0][0].equals(traverseBox[2][2])) {
             return true;
         }
@@ -112,14 +113,16 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 traverseBox[0][2].equals(traverseBox[2][0]);
     }
 
+    //
     void player1Wins() {
         player1WinPoints++;
         Toast.makeText(this, "Player 1 Wins!", Toast.LENGTH_SHORT).show();
-        updatePoints();
+        //    updatePoints();
         resetBoxes();
-
+//
     }
 
+    //
     void player2Wins() {
         player2WinPoints++;
         Toast.makeText(this, "Player 2 Wins!", Toast.LENGTH_SHORT).show();
