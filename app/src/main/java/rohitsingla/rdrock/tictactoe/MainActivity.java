@@ -19,7 +19,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     int boxesCount = 0;
     int i, j;
     int player1WinPoints = 0, player2WinPoints = 0, drawPoints = 0;
-    boolean playerNo1Turn;
+    boolean playerNo1Turn = true;
     String[][] traverseBox = new String[3][3];
 
 
@@ -53,34 +53,51 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     @Override
     public void onClick(View view) {
-        if (view.getId() == R.id.imageViewReset) {
-            Toast.makeText(this, " hello image buddy", Toast.LENGTH_SHORT).show();
-            newGame();
-        } else {
-            if (!((Button) view).getText().toString().equals("")) {
-                return;
-            }
-            if (playerNo1Turn) {
-                ((Button) view).setText("X");
-            } else {
-                ((Button) view).setText("O");
-            }
-            boxesCount++;
-
-            if (whichPlayerWins()) {
-                if (playerNo1Turn)
-                    player1Wins();
-                else
-                    player2Wins();
-            } else if (boxesCount == 9) {
-                draw();
-            } else {
-                playerNo1Turn = !playerNo1Turn;
-            }
+//        if (view.getId() == R.id.imageViewReset) {
+//            Toast.makeText(this, " hello image buddy", Toast.LENGTH_SHORT).show();
+//            newGame();
+//        } else {
+        if (!((Button) view).getText().toString().equals("")) {
+            Toast.makeText(this, "tText().toString().e ", Toast.LENGTH_SHORT).show();
+            return;
         }
+        if (playerNo1Turn) {
+            Toast.makeText(this, " ((Button) view).setText(\"X\");", Toast.LENGTH_SHORT).show();
 
+            ((Button) view).setText("X");
+        } else {
+            Toast.makeText(this, " ((Button) view).setText(\"O\");", Toast.LENGTH_SHORT).show();
 
+            ((Button) view).setText("O");
+        }
+        boxesCount++;
+        Toast.makeText(this, "boxesCount++;" + boxesCount, Toast.LENGTH_SHORT).show();
+
+        if (whichPlayerWins()) {
+            Toast.makeText(this, "whichPlayerWins()", Toast.LENGTH_SHORT).show();
+
+            if (playerNo1Turn) {
+                Toast.makeText(this, "player1Wins();", Toast.LENGTH_SHORT).show();
+
+                player1Wins();
+            } else {
+                Toast.makeText(this, "player2Wins();", Toast.LENGTH_SHORT).show();
+
+                player2Wins();
+            }
+        } else if (boxesCount == 9) {
+            Toast.makeText(this, "boxesCount == 9 ", Toast.LENGTH_SHORT).show();
+
+            draw();
+        } else {
+            Toast.makeText(this, "playerNo1Turn = !playerNo1Turn;", Toast.LENGTH_SHORT).show();
+
+            playerNo1Turn = !playerNo1Turn;
+        }
     }
+
+
+//    }
 
     boolean whichPlayerWins() {
         for (i = 0; i < 3; i++) {
@@ -89,7 +106,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             }
         }
 
-        for (i = 0; i < 3; i++) { //
+        for (i = 0; i < 3; i++) {
             if (traverseBox[0][i].equals(traverseBox[1][i]) &&
                     traverseBox[0][i].equals(traverseBox[2][i]) &&
                     !traverseBox[0][i].equals("")) {
@@ -142,9 +159,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     @SuppressLint("SetTextI18n")
     void updatePoints() {
-        textViewPlayer1.setText("P  1: " + player1WinPoints);
-        textViewPlayer2.setText("P  2: " + player2WinPoints);
-        textViewDraw.setText("P  2: " + drawPoints);
+        textViewPlayer1.setText("P1  : " + player1WinPoints);
+        textViewPlayer2.setText("P2  : " + player2WinPoints);
+        textViewDraw.setText("TIE : " + drawPoints);
 
 
     }
