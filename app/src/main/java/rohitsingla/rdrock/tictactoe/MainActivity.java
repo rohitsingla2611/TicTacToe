@@ -104,7 +104,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             }
         }
 
-    //    if (traverseBox[0][0].equals(traverseBox[1][1]) &&
+        if (traverseBox[0][0].equals(traverseBox[1][1]) &&
                 traverseBox[0][0].equals(traverseBox[2][2])) {
             return true;
         }
@@ -116,7 +116,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     void player1Wins() {
         player1WinPoints++;
         Toast.makeText(this, "Player 1 Wins!", Toast.LENGTH_SHORT).show();
-        //    updatePoints();
+        updatePoints();
         resetBoxes();
 //
     }
