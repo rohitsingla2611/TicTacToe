@@ -131,13 +131,13 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         drawPoints++;
         Toast.makeText(this, "Match Draw!", Toast.LENGTH_SHORT).show();
         updatePoints();
+        //      resetBoxes();
+
+        //   }
+
+//    void newGame() {
         resetBoxes();
-
-    }
-
-    void newGame() {
-        resetBoxes();
-
+//
     }
 
     @SuppressLint("SetTextI18n")
