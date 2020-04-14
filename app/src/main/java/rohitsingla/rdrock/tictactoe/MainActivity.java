@@ -91,11 +91,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         for (i = 0; i < 3; i++) { //
             if (traverseBox[0][i].equals(traverseBox[1][i]) &&
-                    traverseBox[0][i].equals(traverseBox[2][i]) &&//
+                    traverseBox[0][i].equals(traverseBox[2][i]) &&
                     !traverseBox[0][i].equals("")) {
                 return true;
             }
-        }//
+        }
         for (i = 0; i < 3; i++) {
             if (traverseBox[i][0].equals(traverseBox[i][1]) &&
                     traverseBox[i][0].equals(traverseBox[i][2]) &&
