@@ -2,6 +2,7 @@ package rohitsingla.rdrock.tictactoe;
 
 import android.annotation.SuppressLint;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
@@ -53,51 +54,41 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     @Override
     public void onClick(View view) {
-//        if (view.getId() == R.id.imageViewReset) {
-//            Toast.makeText(this, " hello image buddy", Toast.LENGTH_SHORT).show();
-//            newGame();
-//        } else {
-        if (!((Button) view).getText().toString().equals("")) {
-            Toast.makeText(this, "tText().toString().e ", Toast.LENGTH_SHORT).show();
-            return;
-        }
-        if (playerNo1Turn) {
-            Toast.makeText(this, " ((Button) view).setText(\"X\");", Toast.LENGTH_SHORT).show();
-
-            ((Button) view).setText("X");
+        if (view.getId() == R.id.imageViewReset) {
+            Toast.makeText(this, " hello image buddy", Toast.LENGTH_SHORT).show();
+            newGame();
         } else {
-            Toast.makeText(this, " ((Button) view).setText(\"O\");", Toast.LENGTH_SHORT).show();
+            if (!((Button) view).getText().toString().equals("")) {
 
-            ((Button) view).setText("O");
-        }
-        boxesCount++;
-        Toast.makeText(this, "boxesCount++;" + boxesCount, Toast.LENGTH_SHORT).show();
-
-        if (whichPlayerWins()) {
-            Toast.makeText(this, "whichPlayerWins()", Toast.LENGTH_SHORT).show();
-
-            if (playerNo1Turn) {
-                Toast.makeText(this, "player1Wins();", Toast.LENGTH_SHORT).show();
-
-                player1Wins();
-            } else {
-                Toast.makeText(this, "player2Wins();", Toast.LENGTH_SHORT).show();
-
-                player2Wins();
+                return;
             }
-        } else if (boxesCount == 9) {
-            Toast.makeText(this, "boxesCount == 9 ", Toast.LENGTH_SHORT).show();
+            if (playerNo1Turn) {
 
-            draw();
-        } else {
-            Toast.makeText(this, "playerNo1Turn = !playerNo1Turn;", Toast.LENGTH_SHORT).show();
+                Log.v("key", "((Button) view).setText(\"X\");");
+                ((Button) view).setText("X");
+            } else {
+                Log.v("key", "((Button) view).setText(\"O\");");
 
-            playerNo1Turn = !playerNo1Turn;
+                ((Button) view).setText("O");
+            }
+            boxesCount++;
+
+            if (whichPlayerWins()) {
+
+                if (playerNo1Turn) {
+                    player1Wins();
+                } else {
+                    player2Wins();
+                }
+            } else if (boxesCount == 9) {
+                draw();
+            } else {
+                Log.v("key", "playerNo1Turn = !playerNo1Turn;)");
+
+                playerNo1Turn = !playerNo1Turn;
+            }
         }
     }
-
-
-//    }
 
     boolean whichPlayerWins() {
         for (i = 0; i < 3; i++) {
@@ -105,6 +96,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 traverseBox[i][j] = button_[i][j].getText().toString();
             }
         }
+        Log.v("whichPlayerWins", "column wise check");
+
 
         for (i = 0; i < 3; i++) {
             if (traverseBox[0][i].equals(traverseBox[1][i]) &&
@@ -113,6 +106,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 return true;
             }
         }
+
         for (i = 0; i < 3; i++) {
             if (traverseBox[i][0].equals(traverseBox[i][1]) &&
                     traverseBox[i][0].equals(traverseBox[i][2]) &&
@@ -122,11 +116,15 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         }
 
         if (traverseBox[0][0].equals(traverseBox[1][1]) &&
-                traverseBox[0][0].equals(traverseBox[2][2])) {
+                traverseBox[0][0].equals(traverseBox[2][2]) &&
+                !traverseBox[0][0].equals("")) {
             return true;
         }
+
         return traverseBox[0][2].equals(traverseBox[1][1]) &&
-                traverseBox[0][2].equals(traverseBox[2][0]);
+                traverseBox[0][2].equals(traverseBox[2][0]) &&
+                !traverseBox[0][2].equals("");
+
     }
 
     void player1Wins() {
