@@ -78,12 +78,10 @@
             </TableRow>
         </TableLayout>
 
-
         <ImageView
             android:id="@+id/imageViewReset"
             android:layout_width="79dp"
             android:layout_height="79dp"
-            android:layout_marginStart="5dp"
             android:layout_marginTop="65dp"
             android:contentDescription="@string/resetButtonImage"
             android:src="@drawable/reset_icon" />
