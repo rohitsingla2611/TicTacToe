@@ -110,12 +110,12 @@
                 android:layout_marginStart="10dp"
                 android:layout_marginEnd="10dp"
                 android:layout_weight="1"
-                android:textAllCaps="true"
                 android:background="@color/colorBox"
+                android:textAllCaps="true"
                 android:textColor="@color/colorText"
                 android:textSize="30sp"
-
-                android:textStyle="bold" />
+                android:textStyle="bold"
+                tools:ignore="ButtonStyle" />
 
             <Button
                 android:id="@+id/button_01"
@@ -125,7 +125,8 @@
                 android:background="@color/colorBox"
                 android:textColor="@color/colorText"
                 android:textSize="30sp"
-                android:textStyle="bold" />
+                android:textStyle="bold"
+                tools:ignore="ButtonStyle" />
 
             <Button
                 android:id="@+id/button_02"
@@ -137,8 +138,8 @@
                 android:background="@color/colorBox"
                 android:textColor="@color/colorText"
                 android:textSize="30sp"
-
-                android:textStyle="bold" />
+                android:textStyle="bold"
+                tools:ignore="ButtonStyle" />
         </TableRow>
 
         <TableRow android:padding="5dp">
@@ -153,7 +154,8 @@
                 android:background="@color/colorBox"
                 android:textColor="@color/colorText"
                 android:textSize="30sp"
-                android:textStyle="bold" />
+                android:textStyle="bold"
+                tools:ignore="ButtonStyle" />
 
             <Button
                 android:id="@+id/button_11"
@@ -163,8 +165,8 @@
                 android:background="@color/colorBox"
                 android:textColor="@color/colorText"
                 android:textSize="30sp"
-
-                android:textStyle="bold" />
+                android:textStyle="bold"
+                tools:ignore="ButtonStyle" />
 
             <Button
                 android:id="@+id/button_12"
@@ -176,7 +178,8 @@
                 android:background="@color/colorBox"
                 android:textColor="@color/colorText"
                 android:textSize="30sp"
-                android:textStyle="bold" />
+                android:textStyle="bold"
+                tools:ignore="ButtonStyle" />
         </TableRow>
 
         <TableRow
@@ -194,7 +197,8 @@
                 android:background="@color/colorBox"
                 android:textColor="@color/colorText"
                 android:textSize="30sp"
-                android:textStyle="bold" />
+                android:textStyle="bold"
+                tools:ignore="ButtonStyle" />
 
             <Button
                 android:id="@+id/button_21"
@@ -204,8 +208,8 @@
                 android:background="@color/colorBox"
                 android:textColor="@color/colorText"
                 android:textSize="30sp"
-
-                android:textStyle="bold" />
+                android:textStyle="bold"
+                tools:ignore="ButtonStyle" />
 
             <Button
                 android:id="@+id/button_22"
@@ -217,7 +221,8 @@
                 android:background="@color/colorBox"
                 android:textColor="@color/colorText"
                 android:textSize="30sp"
-                android:textStyle="bold" />
+                android:textStyle="bold"
+                tools:ignore="ButtonStyle" />
         </TableRow>
     </TableLayout>
 </LinearLayout>
