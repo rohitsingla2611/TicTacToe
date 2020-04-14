@@ -110,6 +110,7 @@
                 android:layout_marginStart="10dp"
                 android:layout_marginEnd="10dp"
                 android:layout_weight="1"
+                android:textAllCaps="true"
                 android:background="@color/colorBox"
                 android:textColor="@color/colorText"
                 android:textSize="30sp"

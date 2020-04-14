@@ -2,7 +2,6 @@ package rohitsingla.rdrock.tictactoe;
 
 import android.annotation.SuppressLint;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
@@ -55,7 +54,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     @Override
     public void onClick(View view) {
         if (view.getId() == R.id.imageViewReset) {
-            Toast.makeText(this, " hello image buddy", Toast.LENGTH_SHORT).show();
             newGame();
         } else {
             if (!((Button) view).getText().toString().equals("")) {
@@ -64,10 +62,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             }
             if (playerNo1Turn) {
 
-                Log.v("key", "((Button) view).setText(\"X\");");
                 ((Button) view).setText("X");
             } else {
-                Log.v("key", "((Button) view).setText(\"O\");");
 
                 ((Button) view).setText("O");
             }
@@ -78,12 +74,13 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 if (playerNo1Turn) {
                     player1Wins();
                 } else {
+
                     player2Wins();
+
                 }
             } else if (boxesCount == 9) {
                 draw();
             } else {
-                Log.v("key", "playerNo1Turn = !playerNo1Turn;)");
 
                 playerNo1Turn = !playerNo1Turn;
             }
@@ -96,7 +93,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 traverseBox[i][j] = button_[i][j].getText().toString();
             }
         }
-        Log.v("whichPlayerWins", "column wise check");
 
 
         for (i = 0; i < 3; i++) {
@@ -130,6 +126,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     void player1Wins() {
         player1WinPoints++;
         Toast.makeText(this, "Player 1 Wins!", Toast.LENGTH_SHORT).show();
+        playerNo1Turn = true;
         updatePoints();
         resetBoxes();
 
@@ -138,6 +135,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     void player2Wins() {
         player2WinPoints++;
         Toast.makeText(this, "Player 2 Wins!", Toast.LENGTH_SHORT).show();
+
+        playerNo1Turn = false;
         updatePoints();
         resetBoxes();
     }
@@ -151,6 +150,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     }
 
     void newGame() {
+        playerNo1Turn = true;
         resetBoxes();
 
     }
@@ -171,7 +171,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             }
         }
         boxesCount = 0;
-        playerNo1Turn = true;
 
     }
 
