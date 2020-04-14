@@ -150,16 +150,15 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     }
 
     void resetBoxes() {
-        //   for (i = 0; i < 3; i++) {
+        for (i = 0; i < 3; i++) {
             for (j = 0; j < 3; j++) {
                 button_[i][j].setText("");
             }
         }
+        boxesCount = 0;
+        playerNo1Turn = true;
 
-    boxesCount =0
-    playerNo1Turn =true
-
-}
+    }
 
     // @Override
     public void onBackPressed() {
