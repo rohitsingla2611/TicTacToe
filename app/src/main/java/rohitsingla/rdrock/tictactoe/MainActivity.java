@@ -30,10 +30,14 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         initViews();
     }
 
+    @SuppressLint("SetTextI18n")
     void initViews() {
         textViewPlayer1 = findViewById(R.id.textViewPlayer1);
         textViewPlayer2 = findViewById(R.id.textViewPlayer2);
         textViewDraw = findViewById(R.id.textViewDraw);
+        textViewPlayer1.setText("P1  : " + player1WinPoints);
+        textViewPlayer2.setText("P2  : " + player2WinPoints);
+        textViewDraw.setText("TIE : " + drawPoints);
 
         imageViewReset = findViewById(R.id.imageViewReset);
 
@@ -151,6 +155,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     void newGame() {
         playerNo1Turn = true;
+        player1WinPoints = 0;
+        player2WinPoints = 0;
+        drawPoints = 0;
+        Toast.makeText(this, "New Game r", Toast.LENGTH_SHORT).show();
+        updatePoints();
         resetBoxes();
 
     }
