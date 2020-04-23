@@ -98,7 +98,7 @@
             android:layout_marginBottom="1.5dp"
             android:padding="4dp">
 
-            <Button
+            <TextView
                 android:id="@+id/button_00"
                 android:layout_width="100dp"
                 android:layout_height="100dp"
@@ -106,24 +106,26 @@
                 android:layout_marginEnd="10dp"
                 android:layout_weight="1"
                 android:background="@color/colorBox"
+                android:gravity="center"
                 android:textAllCaps="true"
                 android:textColor="@color/colorText"
-                android:textSize="30sp"
+                android:textSize="45sp"
                 android:textStyle="bold"
                 tools:ignore="ButtonStyle" />
 
-            <Button
+            <TextView
                 android:id="@+id/button_01"
                 android:layout_width="100dp"
                 android:layout_height="100dp"
                 android:layout_weight="1"
                 android:background="@color/colorBox"
+                android:gravity="center"
                 android:textColor="@color/colorText"
-                android:textSize="30sp"
+                android:textSize="45sp"
                 android:textStyle="bold"
                 tools:ignore="ButtonStyle" />
 
-            <Button
+            <TextView
                 android:id="@+id/button_02"
                 android:layout_width="100dp"
                 android:layout_height="100dp"
@@ -131,15 +133,16 @@
                 android:layout_marginEnd="10dp"
                 android:layout_weight="1"
                 android:background="@color/colorBox"
+                android:gravity="center"
                 android:textColor="@color/colorText"
-                android:textSize="30sp"
+                android:textSize="45sp"
                 android:textStyle="bold"
                 tools:ignore="ButtonStyle" />
         </TableRow>
 
         <TableRow android:padding="5dp">
 
-            <Button
+            <TextView
                 android:id="@+id/button_10"
                 android:layout_width="100dp"
                 android:layout_height="100dp"
@@ -147,23 +150,25 @@
                 android:layout_marginEnd="10dp"
                 android:layout_weight="1"
                 android:background="@color/colorBox"
+                android:gravity="center"
                 android:textColor="@color/colorText"
-                android:textSize="30sp"
+                android:textSize="45sp"
                 android:textStyle="bold"
                 tools:ignore="ButtonStyle" />
 
-            <Button
+            <TextView
                 android:id="@+id/button_11"
                 android:layout_width="100dp"
                 android:layout_height="100dp"
                 android:layout_weight="1"
                 android:background="@color/colorBox"
+                android:gravity="center"
                 android:textColor="@color/colorText"
-                android:textSize="30sp"
+                android:textSize="45sp"
                 android:textStyle="bold"
                 tools:ignore="ButtonStyle" />
 
-            <Button
+            <TextView
                 android:id="@+id/button_12"
                 android:layout_width="100dp"
                 android:layout_height="100dp"
@@ -171,8 +176,9 @@
                 android:layout_marginEnd="10dp"
                 android:layout_weight="1"
                 android:background="@color/colorBox"
+                android:gravity="center"
                 android:textColor="@color/colorText"
-                android:textSize="30sp"
+                android:textSize="45sp"
                 android:textStyle="bold"
                 tools:ignore="ButtonStyle" />
         </TableRow>
@@ -182,7 +188,7 @@
             android:layout_marginBottom="2.5dp"
             android:padding="4dp">
 
-            <Button
+            <TextView
                 android:id="@+id/button_20"
                 android:layout_width="100dp"
                 android:layout_height="100dp"
@@ -190,23 +196,25 @@
                 android:layout_marginEnd="10dp"
                 android:layout_weight="1"
                 android:background="@color/colorBox"
+                android:gravity="center"
                 android:textColor="@color/colorText"
-                android:textSize="30sp"
+                android:textSize="45sp"
                 android:textStyle="bold"
                 tools:ignore="ButtonStyle" />
 
-            <Button
+            <TextView
                 android:id="@+id/button_21"
                 android:layout_width="100dp"
                 android:layout_height="100dp"
                 android:layout_weight="1"
                 android:background="@color/colorBox"
+                android:gravity="center"
                 android:textColor="@color/colorText"
-                android:textSize="30sp"
+                android:textSize="45sp"
                 android:textStyle="bold"
                 tools:ignore="ButtonStyle" />
 
-            <Button
+            <TextView
                 android:id="@+id/button_22"
                 android:layout_width="100dp"
                 android:layout_height="100dp"
@@ -214,8 +222,9 @@
                 android:layout_marginEnd="10dp"
                 android:layout_weight="1"
                 android:background="@color/colorBox"
+                android:gravity="center"
                 android:textColor="@color/colorText"
-                android:textSize="30sp"
+                android:textSize="45sp"
                 android:textStyle="bold"
                 tools:ignore="ButtonStyle" />
         </TableRow>

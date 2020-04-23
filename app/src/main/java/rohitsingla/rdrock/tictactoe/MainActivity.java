@@ -3,7 +3,6 @@ package rohitsingla.rdrock.tictactoe;
 import android.annotation.SuppressLint;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -15,7 +14,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     long backKeyPressedTime;
     TextView textViewPlayer1, textViewPlayer2, textViewDraw;
     ImageView imageViewReset;
-    Button[][] button_ = new Button[3][3];
+    TextView[][] button_ = new TextView[3][3];
     int boxesCount = 0;
     int i, j;
     int player1WinPoints = 0, player2WinPoints = 0, drawPoints = 0;
@@ -60,16 +59,16 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         if (view.getId() == R.id.imageViewReset) {
             newGame();
         } else {
-            if (!((Button) view).getText().toString().equals("")) {
+            if (!((TextView) view).getText().toString().equals("")) {
 
                 return;
             }
             if (playerNo1Turn) {
 
-                ((Button) view).setText("X");
+                ((TextView) view).setText("X");
             } else {
 
-                ((Button) view).setText("O");
+                ((TextView) view).setText("O");
             }
             boxesCount++;
 
